@@ -1,0 +1,17 @@
+
+*.bin
+*.pt
+*.pth
+*.safetensors
+*.h5
+
+hf_cache/
+*cache*
+.cache/
+
+datasets/
+*.csv
+*.tsv
+*.json
+!results/*.csv
+!./eval_results/*.json
