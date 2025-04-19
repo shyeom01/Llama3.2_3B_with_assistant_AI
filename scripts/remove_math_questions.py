@@ -31,13 +31,13 @@ from typing import Iterable, List, Dict, Any
 # --------------------------- math‑detection logic --------------------------- #
 
 # Pre‑compile regex patterns for speed.
+# Only include keywords that are highly specific to strict math problems.
+# Removed broad terms like 'calculate', 'simplify', 'compute', 'evaluate', 'number', 'expression', 'function', 'variable'.
 _MATH_KEYWORDS = [
-    r"solve", r"calculate", r"evaluate", r"simplify", r"integral", r"derivative",
-    r"equation", r"probability", r"geometry", r"algebra", r"function", r"expression",
-    r"number", r"sum", r"product", r"difference", r"quotient", r"matrix", r"vector",
-    r"limit", r"series", r"angle", r"triangle", r"rectangle", r"circle", r"radius",
-    r"area", r"volume", r"perimeter", r"graph", r"variable", r"polynomial",
-    r"math", r"mathematics",
+    r"solve", r"integral", r"derivative", r"equation", r"probability", r"geometry", r"algebra",
+    r"sum", r"product", r"difference", r"quotient", r"matrix", r"vector", r"limit", r"series",
+    r"angle", r"triangle", r"rectangle", r"circle", r"radius", r"area", r"volume", r"perimeter",
+    r"graph", r"polynomial", r"math", r"mathematics"
 ]
 
 # Typical LaTeX/math symbols or delimiters.
