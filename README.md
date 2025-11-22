@@ -346,6 +346,3 @@ This section provides a comprehensive guide covering the entire process, from do
     outputs = model.generate(**inputs, max_new_tokens=100, pad_token_id=tokenizer.eos_token_id) # Added pad_token_id
     print(tokenizer.decode(outputs[0], skip_special_tokens=True))
     ```
-
----
-*Created by [Your Name]*
